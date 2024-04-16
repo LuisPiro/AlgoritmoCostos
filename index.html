@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo de Sistema de Costos</title>
+    <style>
+        body {
+            background-color: #cc6c13; /* color de fondo */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .logo {
+            position: fixed; /* Fija la posición del logo */
+            top: 0; /* Coloca el logo en la parte superior */
+            left: 10; /* Coloca el logo en la parte izquierda */
+            width: 200px; /* Ajusta el ancho del logo según sea necesario */
+            height: auto; /* Ajusta la altura automáticamente según el ancho */
+            padding: 50px; /* Agrega un poco de espacio alrededor del logo */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Logo de la empresa" class="logo">
+    <h1>Bienvenidos al Algoritmo de Sistema de costos</h1>
+    <button onclick="window.location.href = 'Readme.md';">README</button>
+    <button onclick="cargarJavascript();">ver JavaScript</button>
+    <button onclick="window.location.href = 'SistemaCostos.psc';">Ver PSeInt</button>
+
+    <script>
+        function cargarJavascript() {
+            // Carga del archivo JavaScript
+            var script = document.createElement('script');
+            script.src = 'AlgoritmoCostos.js';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
